@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>人员排行榜</title>
+<link rel="stylesheet" href="css/reset_s.css">
+<link rel="stylesheet" href="css/gl.css">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<style>
+.zc_tb tbody tr td:nth-child(6){color:#0c90d2;}
+.one {
+	background: url(img/one.png) no-repeat center center;
+}
+.two {
+	background: url(img/two.png) no-repeat center center;
+}
+.three {
+	background: url(img/three.png) no-repeat center center;
+}
+</style>
+<script type="text/javascript">//表格区域高度
+$(window).load(function(){
+	CCH();
+ });
+
+$(window).resize(function() {
+	CCH();
+});
+function CCH() {
+	var CH=$(window).height();
+	var ConH= parseInt(CH) -81;
+	$(".ccon").css("height", ConH);	
+}
+</script>
+</head>
+
+<body>
+<div class="con" style="background-color:#e5e6eb;">
+	<div class="cc" style="margin-bottom:10px;">
+    	<div class="zc_top">
+        	<div class="ry_tit">人员排行榜</div>
+            <div class="cy_date" style="margin-top:8px; margin-right:10px;"><input type="text"><small>-</small><input type="text"><a href="#">查询</a></div>
+        </div>
+        
+        <div class="ccon">
+        	<table class="zc_tb">
+            	<thead>
+                	<tr>
+                    	<td>排行</td>
+                        <td style="width:10%">员工姓名</td>
+                    	<td style="width:10%;">客户量</td>
+                    	<td style="width:10%;"><div class="zc_px px_act">成交量</div></td>
+                    	<td style="width:10%;"><div class="zc_px px_act">成交金额（万）</div></td>
+                    	<td style="width:10%;"><div class="zc_px px_act">实收金额（万）</div></td>
+                    	<td style="width:35%;">成交率</td>
+                    </tr>
+                </thead>
+            	<tbody>
+                	<tr>
+                    	<td class="one" style="color:#fff;">1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl1" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td class="two" style="color:#fff;">2</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl2" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td class="three" style="color:#fff;">3</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl3" style="width:65%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:10%;">小小</td>
+                    	<td style="width:10%;">37</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>81.52%</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </div>
+        
+        
+    </div>
+
+</div>
+</body>
+</html>

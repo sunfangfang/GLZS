@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>管理助手首页3</title>
+<link rel="stylesheet" href="css/reset_s.css">
+<link rel="stylesheet" href="css/gl.css">
+<script src="js/echarts-all.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        ConH();
+    });
+
+    $(window).resize(function() {
+        ConH();
+    });
+    function ConH() {
+        var CH=$(window).height();
+        var CW=$(".section").width();
+        var bb=parseInt(CH);
+        var ccH= parseInt(CH) -335;
+        $(".con").css("height", bb);
+        if($(window).width>=1920){
+            $(".ccz2").css("height", ccH);
+        }else{
+            $(".ccz2").css("height", "auto");
+        }
+    }
+</script>
+<script src="js/tj.js"></script>
+</head>
+<body>
+<div class="con" style="background-color:#e5e6eb;overflow: auto;">
+	<div class="cc">
+    	<div class="ccz">
+        	<div class="ccz_tit">厦门非常6+1 瑞景店</div>
+            <div class="ccz_tit2">2016-08-04 16：26</div>
+            <div class="ccz_money"><strong>32,378,450.00</strong><span>元</span></div>
+            <div class="ccz_sl">
+            	<div class="ccz_s">进客量<span>120</span>人</div>
+            	<div class="ccz_s">成交量<span>120</span>人</div>
+            	<div class="ccz_s">成交率<span>120</span>人</div>
+            </div>
+        </div>
+        <div class="line1"></div>
+        <div class="ccy">
+        	<div class="ccy_top">
+            	<span>指标 </span>
+                <select>
+                	<option>月份切换</option>
+                	<option>1</option>
+                	<option>2</option>
+                	<option>3</option>
+                	<option>4</option>
+                	<option>5</option>
+                	<option>6</option>
+                	<option>7</option>
+                	<option>8</option>
+                	<option>9</option>
+                	<option>10</option>
+                	<option>11</option>
+                	<option>12</option>
+                </select>
+            </div>
+            <table class="ccy_tb">
+            	<thead>
+                	<tr>
+                    	<td>目标</td>
+                    	<td>成交</td>
+                    	<td>实际收款 </td>
+                    </tr>
+                </thead>
+            	<tbody>
+                	<tr>
+                    	<td><span class="ccy_c1">8</span> 万元</td>
+                    	<td><span class="ccy_c2">10.5 </span>万元</td>
+                    	<td><span class="ccy_c2">7.5</span> 万元 </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="ccyb">
+            	<div class="ccyb1">
+                    <div class="cicle">
+                        <div class="bar bar-left">
+                            <div class="bar-left-an lName1"></div>
+                        </div>
+                        <div class="bar bar-right">
+                            <div  class="bar-right-an rName1"></div>
+                        </div>
+                        <div class="tx tx1">0%</div>
+                        <div class="txb">业绩完成</div>
+                    </div>
+                    <input type="text" id="inp1" value="90"><!--value值定义业绩完成百分比 -->
+                </div>
+                <div class="ccyb2">
+                	<div class="ccy_jd2"><span>目标</span><strong><small class="cy_c1" style="width:90%"></small></strong><span>90%</span></div>
+                	<div class="ccy_jd2"><span>目标</span><strong><small class="cy_c2" style="width:80%"></small></strong><span>80%</span></div>
+                	<div class="ccy_jd2"><span>目标</span><strong><small class="cy_c3" style="width:65%"></small></strong><span>65%</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="cc">
+        <div class="cc_top">
+            <ul class="tj_tit">
+                <li class="fir_li">日K</li>
+                <li>周K</li>
+                <li>月K</li>
+                <li>年K</li>
+            </ul>
+        </div>
+    	<div class="ccz2" id="cc_contain">
+            <div class="section">
+                <div class="mx" id="mx1"></div>
+                <div class="cjl" id="cjl1"></div>
+            </div>
+            <div class="section">
+                <div class="mx" id="mx2"></div>
+                <div class="cjl" id="cjl2"></div>
+            </div>
+            <div class="section">
+                <div class="mx" id="mx3"></div>
+                <div class="cjl" id="cjl3"></div>
+            </div>
+            <div class="section">
+                <div class="mx" id="mx4"></div>
+                <div class="cjl" id="cjl4"></div>
+            </div>
+        </div>
+    	<div class="ccy2">
+        	<div class="ccy2_tit">付款类型</div>
+            <table class="ccy_tb2">
+            	<thead>
+                	<tr>
+                    	<td>支付方式</td>
+                    	<td>金额(元)</td>
+                    	<td>总金额占比 </td>
+                    </tr>
+                </thead>
+            	<tbody>
+                	<tr>
+                    	<td><span class="ccy2_c1">现金</span> </td>
+                    	<td><span class="ccy2_c2a">↑9,120.00</span></td>
+                    	<td><span class="ccy2_c1">45.5%</span>  </td>
+                    </tr>
+                	<tr>
+                    	<td><span class="ccy2_c1">现金</span> </td>
+                    	<td><span class="ccy2_c2a">↑9,120.00</span></td>
+                    	<td><span class="ccy2_c1">45.5%</span>  </td>
+                    </tr>
+                	<tr>
+                    	<td><span class="ccy2_c1">现金</span> </td>
+                    	<td><span class="ccy2_c2b">↓9,120.00</span></td>
+                    	<td><span class="ccy2_c1">45.5%</span>  </td>
+                    </tr>
+                </tbody>
+                <thead>
+                <tr style="border-top:none;">
+                    <td>总金额</td>
+                    <td style="color: #fb404b;">9120.00</td>
+                    <td>45.3%</td>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- import-js 圆形进度条-->
+<!-- import-my-js -->
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var cicle = function(text,lName,rName,textIn) {
+            var oTx = $(text);
+            var b_l_a = $(lName);
+            var b_r_a = $(rName);
+            var t_In=$(textIn);
+            var cicleTransform = function(num, old_num) {
+                var c_num = num;
+                if(c_num > 50) {
+                    b_r_a.css({
+                        "transform": "rotate(45deg)",
+                        "transition": "transform 1s linear"
+                    });
+                    setTimeout(function() {
+                        b_l_a.css({
+                            "transform": "rotate(" + (((c_num-50)/100*360)-135) + "deg)",
+                            "transition": "transform 1s linear"
+                        });
+                    },1000);
+                } else {
+                    if(old_num > 50) {
+                        setTimeout(function() {
+                            b_r_a.css({
+                                "transform": "rotate(" + ((c_num/100*360)-135) + "deg)",
+                                "transition": "transform 1s linear"
+                            });
+                        },1000);
+                        b_l_a.css({
+                            "transform": "rotate(-135deg)",
+                            "transition": "transform 1s linear"
+                        });
+                    } else {
+                        b_r_a.css({
+                            "transform": "rotate(" + ((c_num/100*360)-135) + "deg)",
+                            "transition": "transform 1s linear"
+                        });
+                    }
+
+                }
+            };
+            var setnum = function(num) {
+                oTx.text(num + "%");
+            };
+            var getnum = function() {
+                return parseInt(oTx.text());
+            };
+            var num = parseInt($.trim( $(t_In).val() ));
+            if(num>=0 && num <= 100){
+                cicleTransform(num, getnum());
+                setnum(num);
+            }else{
+            }
+        };
+        cicle(".tx1",".lName1",".rName1","#inp1");
+        $(".tj_tit li").each(function(i){
+            $(this).data("index",i);
+        });
+        $(".tj_tit li").click(function(){
+            $(".tj_tit li").removeClass("fir_li");
+            $(this).addClass("fir_li");
+            var i=$(this).data("index");
+            $(".section").hide();
+            $($(".section")[i]).show();
+        });
+    });
+</script>
+</body>
+</html>
