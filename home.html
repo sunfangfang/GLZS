@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>管理助手</title>
+    <link rel="stylesheet" href="css/reset_s.css">
+    <link rel="stylesheet" href="css/gl.css">
+    <script src="js/echarts-all.js"></script>
+    <script src="js/map.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="top_show">总营收:<strong>1,512,161.00</strong>元</div>
+        <div class="top_show">总实收:<strong>1,512,161.00</strong>元</div>
+        <div class="top_show">共:<strong>10</strong>家店</div>
+        <a href="#" id="btn2" class="top_btn btn2b" style="margin-right:30px;"></a>
+        <a href="#" id="btn1" class="top_btn btn1b btn1a" style="margin-right:20px;"></a>
+    </div>
+    <div class="con jt_contr jt_contr1">
+        <div class="conFir">
+            <div class="cz" style="text-align:center;height: 600px;overflow: hidden;margin-top: 100px;">
+                <div id="main" style="height:800px;width: 600px;margin: auto;"></div>
+            </div>
+            <div class="cy">
+                <div class="cy_top">
+                    <div class="cy_top_tit">地域分布战略图</div>
+                    <div class="cy_date"><input type="text"><small>-</small><input type="text"><a href="#">查询</a></div>
+                </div>
+                <div class="cy_div">
+                    <ul class="sj sj_tit">
+                        <li>地域</li>
+                        <li>店面 </li>
+                        <li>成交量（人）</li>
+                        <li>销售金额（元） </li>
+                        <li>实收金额（元）</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c1" style="width:200px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c2" style="width:150px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c3" style="width:120px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_nr">
+                        <li>北京</li>
+                        <li><a href="index3.html">北京韩国艺匠婚纱摄影 </a></li>
+                        <li><div class="sj_cjl"><span>1234</span><small class="cjl_c4" style="width:69px"></small></div></li>
+                        <li>9,120.00 </li>
+                        <li>9,120.00</li>
+                    </ul>
+                    <ul class="sj sj_tit">
+                        <li>总计</li>
+                        <li>店面 </li>
+                        <li>成交量（人）</li>
+                        <li style="color:#fb404b;">9,120.00</li>
+                        <li style="color:#fb404b;">9,120.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="con jt_contr jt_contr2" style="background-color:#e5e6eb;">
+        <div class="cc">
+            <div class="ccz">
+                <div class="ccz_tit"><a href="index3.html">厦门非常6+1 瑞景店</a></div>
+                <div class="ccz_tit2">2016-08-04 16：26</div>
+                <div class="ccz_money"><strong>32,378,450.00</strong><span>元</span></div>
+                <div class="ccz_sl">
+                    <div class="ccz_s">进客量<span>120</span>人</div>
+                    <div class="ccz_s">成交量<span>120</span>人</div>
+                    <div class="ccz_s">成交率<span>120</span>人</div>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="ccy">
+                <div class="ccy_top">
+                    <span>指标 </span>
+                    <select>
+                        <option>月份切换</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <table class="ccy_tb">
+                    <thead>
+                    <tr>
+                        <td>目标</td>
+                        <td>成交</td>
+                        <td>实际收款 </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="ccy_c1">8</span> 万元</td>
+                        <td><span class="ccy_c2">10.5 </span>万元</td>
+                        <td><span class="ccy_c2">7.5</span> 万元 </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ccyb">
+                    <div class="ccyb1">
+                        <div class="cicle">
+                            <div class="bar bar-left">
+                                <div class="bar-left-an lName1"></div>
+                            </div>
+                            <div class="bar bar-right">
+                                <div  class="bar-right-an rName1"></div>
+                            </div>
+                            <div class="tx tx1">0%</div>
+                            <div class="txb">业绩完成</div>
+                        </div>
+                        <input type="text" id="inp1" value="90" style="opacity: 0"/><!--value值定义业绩完成百分比 -->
+                    </div>
+                    <div class="ccyb2">
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c1" style="width:90%"></small></strong><span>90%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c2" style="width:80%"></small></strong><span>80%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c3" style="width:65%"></small></strong><span>65%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cc">
+            <div class="ccz">
+                <div class="ccz_tit"><a href="index3.html">厦门非常6+1 瑞景店</a></div>
+                <div class="ccz_tit2">2016-08-04 16：26</div>
+                <div class="ccz_money"><strong>32,378,450.00</strong><span>元</span></div>
+                <div class="ccz_sl">
+                    <div class="ccz_s">进客量<span>120</span>人</div>
+                    <div class="ccz_s">成交量<span>120</span>人</div>
+                    <div class="ccz_s">成交率<span>120</span>人</div>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="ccy">
+                <div class="ccy_top">
+                    <span>指标 </span>
+                    <select>
+                        <option>月份切换</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <table class="ccy_tb">
+                    <thead>
+                    <tr>
+                        <td>目标</td>
+                        <td>成交</td>
+                        <td>实际收款 </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="ccy_c1">8</span> 万元</td>
+                        <td><span class="ccy_c2">10.5 </span>万元</td>
+                        <td><span class="ccy_c2">7.5</span> 万元 </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ccyb">
+                    <div class="ccyb1">
+                        <div class="cicle">
+                            <div class="bar bar-left">
+                                <div class="bar-left-an lName2"></div>
+                            </div>
+                            <div class="bar bar-right">
+                                <div  class="bar-right-an rName2"></div>
+                            </div>
+                            <div class="tx tx2">0%</div>
+                            <div class="txb">业绩完成</div>
+                        </div>
+                        <input type="text" id="inp2" value="60" style="opacity: 0"/><!--value值定义业绩完成百分比 -->
+                    </div>
+                    <div class="ccyb2">
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c1" style="width:90%"></small></strong><span>90%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c2" style="width:80%"></small></strong><span>80%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c3" style="width:65%"></small></strong><span>65%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cc">
+            <div class="ccz">
+                <div class="ccz_tit"><a href="index3.html">厦门非常6+1 瑞景店</a></div>
+                <div class="ccz_tit2">2016-08-04 16：26</div>
+                <div class="ccz_money"><strong>32,378,450.00</strong><span>元</span></div>
+                <div class="ccz_sl">
+                    <div class="ccz_s">进客量<span>120</span>人</div>
+                    <div class="ccz_s">成交量<span>120</span>人</div>
+                    <div class="ccz_s">成交率<span>120</span>人</div>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="ccy">
+                <div class="ccy_top">
+                    <span>指标 </span>
+                    <select>
+                        <option>月份切换</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <table class="ccy_tb">
+                    <thead>
+                    <tr>
+                        <td>目标</td>
+                        <td>成交</td>
+                        <td>实际收款 </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="ccy_c1">8</span> 万元</td>
+                        <td><span class="ccy_c2">10.5 </span>万元</td>
+                        <td><span class="ccy_c2">7.5</span> 万元 </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ccyb">
+                    <div class="ccyb1">
+                        <div class="cicle">
+                            <div class="bar bar-left">
+                                <div class="bar-left-an lName3"></div>
+                            </div>
+                            <div class="bar bar-right">
+                                <div  class="bar-right-an rName3"></div>
+                            </div>
+                            <div class="tx tx3">0%</div>
+                            <div class="txb">业绩完成</div>
+                        </div>
+                        <input type="text" id="inp3" value="70" style="opacity: 0"/><!--value值定义业绩完成百分比 -->
+                    </div>
+                    <div class="ccyb2">
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c1" style="width:90%"></small></strong><span>90%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c2" style="width:80%"></small></strong><span>80%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c3" style="width:65%"></small></strong><span>65%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cc">
+            <div class="ccz">
+                <div class="ccz_tit"><a href="index3.html">厦门非常6+1 瑞景店</a></div>
+                <div class="ccz_tit2">2016-08-04 16：26</div>
+                <div class="ccz_money"><strong>32,378,450.00</strong><span>元</span></div>
+                <div class="ccz_sl">
+                    <div class="ccz_s">进客量<span>120</span>人</div>
+                    <div class="ccz_s">成交量<span>120</span>人</div>
+                    <div class="ccz_s">成交率<span>120</span>人</div>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="ccy">
+                <div class="ccy_top">
+                    <span>指标 </span>
+                    <select>
+                        <option>月份切换</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <table class="ccy_tb">
+                    <thead>
+                    <tr>
+                        <td>目标</td>
+                        <td>成交</td>
+                        <td>实际收款 </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="ccy_c1">8</span> 万元</td>
+                        <td><span class="ccy_c2">10.5 </span>万元</td>
+                        <td><span class="ccy_c2">7.5</span> 万元 </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ccyb">
+                    <div class="ccyb1">
+                        <div class="cicle">
+                            <div class="bar bar-left">
+                                <div class="bar-left-an lName4"></div>
+                            </div>
+                            <div class="bar bar-right">
+                                <div  class="bar-right-an rName4"></div>
+                            </div>
+                            <div class="tx tx4">0%</div>
+                            <div class="txb">业绩完成</div>
+                        </div>
+                        <input type="text" id="inp4" value="80" style="opacity: 0"/><!--value值定义业绩完成百分比 -->
+                    </div>
+                    <div class="ccyb2">
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c1" style="width:90%"></small></strong><span>90%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c2" style="width:80%"></small></strong><span>80%</span></div>
+                        <div class="ccy_jd2"><span>目标</span><strong><small class="cy_c3" style="width:65%"></small></strong><span>65%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

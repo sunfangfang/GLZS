@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>产品分析</title>
+<link rel="stylesheet" href="css/reset_s.css">
+<link rel="stylesheet" href="css/gl.css">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<style>
+.zc_tb tbody tr td:nth-child(5){color:#0c90d2;}
+</style>
+<script type="text/javascript">//表格区域高度
+$(window).load(function(){
+	CCH();
+ });
+
+$(window).resize(function() {
+	CCH();
+});
+function CCH() {
+	var CH=$(window).height();
+	var ConH= parseInt(CH) -81;
+	$(".ccon").css("height", ConH);
+}
+</script>
+</head>
+
+<body>
+<!--<div class="head">-->
+	<!--<div class="h_tit">管理助手</div>-->
+    <!--<ul class="h_nav">-->
+    	<!--<li><a href="#">首页</a></li>-->
+    	<!--<li><a href="#">集团监控</a></li>-->
+    	<!--<li><a href="#">产品分析</a></li>-->
+    	<!--<li><a href="#">人员</a></li>-->
+    <!--</ul>-->
+<!--</div>-->
+<div class="con" style="background-color:#e5e6eb;">
+	<div class="cc" style="margin-bottom:10px;">
+    	<div class="zc_top">
+        	<div class="tab_btn tbtn" id="tb1">消费包套</div>
+        	<div class="tab_btn " id="tb2">消费产品</div>
+            <div class="cy_date" style="margin-top:8px; margin-right:10px;"><input type="text"><small>-</small><input type="text"><a href="#">查询</a></div>
+        </div>
+
+        <div class="ccon" id="cc1">
+        	<table class="zc_tb">
+            	<thead>
+                	<tr>
+                    	<td>排行</td>
+                    	<td style="width:20%;">产品名称</td>
+                    	<td style="width:10%;"><div class="zc_px px_act">销售金额（元）</div></td>
+                    	<td style="width:10%;"><div class="zc_px px_act">销售数量</div></td>
+                    	<td style="width:10%;"><div class="zc_px px_act">总销售量占比</div></td>
+                    	<td style="width:35%;">客户数量</td>
+                    </tr>
+                </thead>
+            	<tbody>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl1" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl2" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl3" style="width:65%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td style="width:20%;">婚纱包套</td>
+                    	<td style="width:10%;">378,520</td>
+                    	<td style="width:10%;">38</td>
+                    	<td style="width:10%;">81.52%</td>
+                    	<td style="width:35%;"><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="ccon" style="display:none" id="cc2">
+        	<table class="zc_tb">
+            	<thead>
+                	<tr>
+                    	<td>排行</td>
+                    	<td>产品名称</td>
+                    	<td>销售金额（元）</td>
+                    	<td><div class="zc_px px_act">销售数量</div></td>
+                    	<td><div class="zc_px ">一销数量</div></td>
+                    	<td><div class="zc_px ">一销金额</div></td>
+                    	<td><div class="zc_px ">二销数量</div></td>
+                    	<td><div class="zc_px px_act">二销金额</div></td>
+                    	<td><div class="zc_px px_act">赠送数量</div></td>
+                    	<td><div class="zc_px px_act">赠送金额</div></td>
+                    	<td><div class="zc_px px_act">总销售量占比</div></td>
+                    	<td>客户数量</td>
+                    </tr>
+                </thead>
+            	<tbody>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl1" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl2" style="width:80%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl3" style="width:65%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:50%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                	<tr>
+                    	<td>1</td>
+                    	<td>婚纱包套</td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>38 </td>
+                    	<td>378,520</td>
+                    	<td>38</td>
+                    	<td>378,520</td>
+                    	<td>37</td>
+                    	<td>378,520</td>
+                    	<td>81.52%</td>
+                    	<td><div class="zc_sl"><span>380</span><strong><small class="sl4" style="width:35%;"></small></strong></div></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+	<script type="text/jscript">//切换按钮
+    $(".tab_btn").click(function(){
+		$(".tab_btn").removeClass('tbtn');
+		$(this).addClass('tbtn');
+		});
+	$(".zc_px").click(function(){
+		$(this).toggleClass('px_act');
+		});
+	$("#tb1").click(function(){//tab标签切换
+			$("#cc2").hide();
+			$("#cc1").show();
+		});
+	$("#tb2").click(function(){
+			$("#cc1").hide();
+			$("#cc2").show();
+		});
+    </script>
+
+</div>
+</body>
+</html>
